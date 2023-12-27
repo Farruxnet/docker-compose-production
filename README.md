@@ -20,6 +20,7 @@ Create or edit the Docker daemon configuration file (e.g., /etc/docker/daemon.js
 {
   "iptables": false
 }
+```
 
 Restart docker
 
@@ -27,4 +28,3 @@ Restart docker
 systemctl restart docker.service
 ```
 
-```
