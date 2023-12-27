@@ -21,6 +21,12 @@ Create or edit the Docker daemon configuration file (e.g., /etc/docker/daemon.js
   "iptables": false
 }
 ```
+Manage Docker Container Rules:
+
+```bash
+sudo ufw allow in on docker0 from <container_ip> to any port <container_port> proto <protocol>
+```
+
 
 Restart docker
 
@@ -28,3 +34,5 @@ Restart docker
 systemctl restart docker.service
 ```
 
+Bridge Network:
+`docker0` acts as a bridge interface, allowing communication between Docker containers and between containers and the host system. It provides a network bridge that connects the containers to the host's network.
