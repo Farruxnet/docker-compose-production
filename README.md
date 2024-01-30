@@ -21,12 +21,6 @@ Create or edit the Docker daemon configuration file (e.g., /etc/docker/daemon.js
   "iptables": false
 }
 ```
-Manage Docker Container Rules:
-
-```bash
-sudo ufw allow in on docker0 from <container_ip> to any port <container_port> proto <protocol>
-```
-
 
 Restart docker
 
